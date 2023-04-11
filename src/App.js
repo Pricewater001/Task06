@@ -15,9 +15,11 @@ function App() {
       <Header />
       <ValueContext.Provider value={ValueContext}>
         <Routes>
+          <Route path="/" element={<MainContent />} />
           <Route path="Dogs" element={<MainContent />} />
           <Route path="Fox" element={<CatContent />} />
           <Route path="Rice" element={<DuckContent />} />
+          <Route path="/*" element={<MainContent />} />
         </Routes>
       </ValueContext.Provider>
       <Footer />

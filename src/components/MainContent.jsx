@@ -13,7 +13,7 @@ const MainContent = () => {
     const { message } = await response.json();
     setUrl(message);
   };
-git
+
   return (
     <div className="mainContent">
       {url && <CustomeCard url={url} />}
